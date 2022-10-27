@@ -12,7 +12,7 @@ namespace Multiples3sAnd5s
             
 
            b. Find the sum of all multiples of 3 or 5 below 1000 and print it out to the console.*/
-            var aNumberList = Enumerable.Range(1, 10-1).ToList();
+            var aNumberList = Enumerable.Range(1, 9).ToList();
             int sum = 0;
             foreach(var a in aNumberList)
             {
@@ -34,13 +34,10 @@ namespace Multiples3sAnd5s
             {
                 if (b % 3 == 0 || b % 5 == 0)
                 {
-                    Console.WriteLine(b);
+                    //Console.WriteLine(b);
                     sum += b;
                 }
-                else
-                {
-                    continue;
-                }
+                //Console.WriteLine(b);
             }
             Console.WriteLine(sum);
         }
