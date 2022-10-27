@@ -10,7 +10,7 @@ namespace CodeChallenges2
     {
         static void Main(string[] args)
         {
-            
+
             bool exit = false;
             List<long> fibSeq = new List<long>() { 1, 2 };
             long startNbr = 1;
@@ -21,12 +21,12 @@ namespace CodeChallenges2
             do
             {
 
-                if (digitNumber < 10 )
+                if (digitNumber < 10)
                 {
                     fibNbr = fibSeq[fibSeq.Count - 1] + fibSeq[fibSeq.Count - 2];
                     fibSeq.Add(fibNbr);
                     digitNumber = fibNbr.ToString().Length;
-                    i+=1;
+                    i += 1;
                     Console.WriteLine(i);
                 }
                 else
