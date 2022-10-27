@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CodeChallenges2.Collatz</StartupObject>
+    <StartupObject>CodeChallenges2.FibSequenceTenDigit</StartupObject>
   </PropertyGroup>
 
 </Project>
