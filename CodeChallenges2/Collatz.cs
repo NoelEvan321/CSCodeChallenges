@@ -43,7 +43,22 @@
                 continue;
             }
             //print countDict.Max to console + key.
-
+            int newCount = 0;
+            int newKey = 0;
+            foreach(var (key,value) in countDict)
+            {
+                //Console.WriteLine(key);
+                //Console.WriteLine(value);
+                if (value > newCount)
+                {
+                    newCount = value;
+                    newKey = key;
+                    //Console.WriteLine($"Key:{newKey}");
+                    //Console.WriteLine($"Count:{newCount}");
+                }
+            }
+            Console.WriteLine($"Key:{newKey}");
+            Console.WriteLine($"Count:{newCount}");
         }
     }
 }
